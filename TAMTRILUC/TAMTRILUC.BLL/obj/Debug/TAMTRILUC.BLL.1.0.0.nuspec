@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TAMTRILUC.BLL</id>
+    <version>1.0.0</version>
+    <authors>TAMTRILUC.BLL</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="TAMTRILUC.A00" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="TAMTRILUC.DAL" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="5.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="5.0.12" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\TAMTRILUC\TAMTRILUC.BLL\bin\Debug\net5.0\TAMTRILUC.BLL.runtimeconfig.json" target="lib\net5.0\TAMTRILUC.BLL.runtimeconfig.json" />
+    <file src="D:\TAMTRILUC\TAMTRILUC.BLL\bin\Debug\net5.0\TAMTRILUC.BLL.dll" target="lib\net5.0\TAMTRILUC.BLL.dll" />
+  </files>
+</package>

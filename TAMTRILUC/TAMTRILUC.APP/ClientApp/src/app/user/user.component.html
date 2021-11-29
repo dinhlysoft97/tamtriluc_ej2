@@ -1,0 +1,92 @@
+<h1 id="tableLabel">Danh Sách Học Viên</h1>
+<button class="btn btn-primary" (click)="openModel(true,null)">Thêm học viên</button>
+<p></p>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="users.totalRecord">
+  <thead>
+    <tr>
+      <th>Mã học viên</th>
+      <th>Tên học viên</th>
+      <th>Giới tính</th>
+      <th>Năm sinh</th>
+      <th>Số điện thoại</th>
+      <th>Địa chỉ</th>
+      <th>Tác vụ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let x of users.data">
+      <td>{{ x.userId }}</td>
+      <td>{{ x.userName }}</td>
+      <td>{{ x.gender }}</td>
+      <td>{{ x.age }}</td>
+      <td>{{ x.phone }}</td>
+      <td>{{ x.address }}</td>
+      <td>
+        <button class="btn btn-info btm-sm" (click)="openModel(false,x)">Sửa</button>
+        <button class="btn btn-danger btm-sm" (click)="deleteUser(x)">Xóa</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="pagination">
+    <li class="page-item">
+        <a href="javascript:void(0);" (click)="searchPrevious()">Trước</a>
+    </li>
+    <li class="page-item">
+        {{users.pageNumber}}
+    </li>
+    <li class="page-item">
+        <a href="javascript:void(0);" (click)="searchNext()">Sau</a>
+    </li>
+</ul>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" *ngIf="!isEdit" id="exampleModalLabel">Thêm Học Viên</h5>
+          <h5 class="modal-title" *ngIf="isEdit" id="exampleModalLabel">Sửa Học Viên</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-4">Mã học viên</div>
+                <div class="col-8"><input class="form-control" [(ngModel)]="user.userId"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4">Tên học viên</div>
+                <div class="col-8"><input class="form-control" [(ngModel)]="user.userName"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4">Giới tính</div>
+                <div class="col-8"><input class="form-control" [(ngModel)]="user.gender"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4">Tuổi</div>
+                <div class="col-8"><input class="form-control" [(ngModel)]="user.age"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4">Số điện thoại</div>
+                <div class="col-8"><input class="form-control" [(ngModel)]="user.phone"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4">Địa chỉ</div>
+                <div class="col-8"><input class="form-control" [(ngModel)]="user.address"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" (click)="updateUser()">Chỉnh sửa</button>
+          <button type="button" class="btn btn-primary" (click)="insertUser()">Thêm mới</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f4974edb-63f4-418a-a923-33d0b061e5e4": {
+      "ProjectGuid": "f4974edb-63f4-418a-a923-33d0b061e5e4",
+      "DisplayName": "TAMTRILUC.APP",
+      "ColorIndex": 0
+    },
+    "79f73ac9-ff75-4b69-8976-242730d63c2e": {
+      "ProjectGuid": "79f73ac9-ff75-4b69-8976-242730d63c2e",
+      "DisplayName": "TAMTRILUC.DAL",
+      "ColorIndex": 1
+    },
+    "4f40fda0-12e7-4c81-bd7d-8ade5132facd": {
+      "ProjectGuid": "4f40fda0-12e7-4c81-bd7d-8ade5132facd",
+      "DisplayName": "TAMTRILUC.BLL",
+      "ColorIndex": 2
+    },
+    "c38e28d6-7e0d-4bad-8271-9940a5dccff1": {
+      "ProjectGuid": "c38e28d6-7e0d-4bad-8271-9940a5dccff1",
+      "DisplayName": "TAMTRILUC.A00",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "fee8a5a1-3752-4394-9615-6c7a0fe97233": {
+      "ProjectGuid": "fee8a5a1-3752-4394-9615-6c7a0fe97233",
+      "DisplayName": "TAMTRILUC.A00",
+      "ColorIndex": 4
+    },
+    "56d3f4d7-4b65-4245-8960-2857d538154f": {
+      "ProjectGuid": "56d3f4d7-4b65-4245-8960-2857d538154f",
+      "DisplayName": "TAMTRILUC.APP",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

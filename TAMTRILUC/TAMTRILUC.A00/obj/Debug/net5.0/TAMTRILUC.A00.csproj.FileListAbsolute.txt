@@ -1,0 +1,15 @@
+D:\TAMTRILUC\TAMTRILUC.A00\obj\Debug\net5.0\TAMTRILUC.A00.csproj.AssemblyReference.cache
+D:\TAMTRILUC\TAMTRILUC.A00\obj\Debug\net5.0\TAMTRILUC.A00.GeneratedMSBuildEditorConfig.editorconfig
+D:\TAMTRILUC\TAMTRILUC.A00\obj\Debug\net5.0\TAMTRILUC.A00.AssemblyInfoInputs.cache
+D:\TAMTRILUC\TAMTRILUC.A00\obj\Debug\net5.0\TAMTRILUC.A00.AssemblyInfo.cs
+D:\TAMTRILUC\TAMTRILUC.A00\obj\Debug\net5.0\TAMTRILUC.A00.csproj.CoreCompileInputs.cache
+D:\TAMTRILUC\TAMTRILUC.A00\bin\Debug\net5.0\TAMTRILUC.A00.deps.json
+D:\TAMTRILUC\TAMTRILUC.A00\bin\Debug\net5.0\TAMTRILUC.A00.runtimeconfig.json
+D:\TAMTRILUC\TAMTRILUC.A00\bin\Debug\net5.0\TAMTRILUC.A00.runtimeconfig.dev.json
+D:\TAMTRILUC\TAMTRILUC.A00\bin\Debug\net5.0\TAMTRILUC.A00.dll
+D:\TAMTRILUC\TAMTRILUC.A00\bin\Debug\net5.0\ref\TAMTRILUC.A00.dll
+D:\TAMTRILUC\TAMTRILUC.A00\bin\Debug\net5.0\TAMTRILUC.A00.pdb
+D:\TAMTRILUC\TAMTRILUC.A00\obj\Debug\net5.0\TAMTRILUC.A00.dll
+D:\TAMTRILUC\TAMTRILUC.A00\obj\Debug\net5.0\ref\TAMTRILUC.A00.dll
+D:\TAMTRILUC\TAMTRILUC.A00\obj\Debug\net5.0\TAMTRILUC.A00.pdb
+D:\TAMTRILUC\TAMTRILUC.A00\obj\Debug\net5.0\TAMTRILUC.A00.genruntimeconfig.cache
