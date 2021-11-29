@@ -5803,11 +5803,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj",
+      "projectUniqueName": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj",
       "projectName": "TAMTRILUC.A00",
-      "projectPath": "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj",
+      "projectPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj",
       "packagesPath": "C:\\Users\\Dinh Ly Soft\\.nuget\\packages\\",
-      "outputPath": "D:\\TAMTRILUC\\TAMTRILUC.A00\\obj\\",
+      "outputPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

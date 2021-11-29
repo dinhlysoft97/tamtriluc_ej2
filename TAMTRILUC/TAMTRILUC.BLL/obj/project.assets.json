@@ -5844,11 +5844,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj",
+      "projectUniqueName": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj",
       "projectName": "TAMTRILUC.BLL",
-      "projectPath": "D:\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj",
+      "projectPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj",
       "packagesPath": "C:\\Users\\Dinh Ly Soft\\.nuget\\packages\\",
-      "outputPath": "D:\\TAMTRILUC\\TAMTRILUC.BLL\\obj\\",
+      "outputPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5868,11 +5868,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj": {
-              "projectPath": "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj"
+            "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj": {
+              "projectPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj"
             },
-            "D:\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj": {
-              "projectPath": "D:\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj"
+            "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj": {
+              "projectPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj"
             }
           }
         }

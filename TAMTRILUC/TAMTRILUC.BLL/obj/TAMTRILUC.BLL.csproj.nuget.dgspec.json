@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj": {}
+    "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj": {}
   },
   "projects": {
-    "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj": {
+    "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj",
+        "projectUniqueName": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj",
         "projectName": "TAMTRILUC.A00",
-        "projectPath": "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj",
+        "projectPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj",
         "packagesPath": "C:\\Users\\Dinh Ly Soft\\.nuget\\packages\\",
-        "outputPath": "D:\\TAMTRILUC\\TAMTRILUC.A00\\obj\\",
+        "outputPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -77,14 +77,14 @@
         }
       }
     },
-    "D:\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj": {
+    "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj",
+        "projectUniqueName": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj",
         "projectName": "TAMTRILUC.BLL",
-        "projectPath": "D:\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj",
+        "projectPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj",
         "packagesPath": "C:\\Users\\Dinh Ly Soft\\.nuget\\packages\\",
-        "outputPath": "D:\\TAMTRILUC\\TAMTRILUC.BLL\\obj\\",
+        "outputPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -104,11 +104,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj": {
-                "projectPath": "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj"
+              "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj": {
+                "projectPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj"
               },
-              "D:\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj": {
-                "projectPath": "D:\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj"
+              "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj": {
+                "projectPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj"
               }
             }
           }
@@ -157,14 +157,14 @@
         }
       }
     },
-    "D:\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj": {
+    "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj",
+        "projectUniqueName": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj",
         "projectName": "TAMTRILUC.DAL",
-        "projectPath": "D:\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj",
+        "projectPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.DAL\\TAMTRILUC.DAL.csproj",
         "packagesPath": "C:\\Users\\Dinh Ly Soft\\.nuget\\packages\\",
-        "outputPath": "D:\\TAMTRILUC\\TAMTRILUC.DAL\\obj\\",
+        "outputPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -184,8 +184,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj": {
-                "projectPath": "D:\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj"
+              "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj": {
+                "projectPath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.A00\\TAMTRILUC.A00.csproj"
               }
             }
           }

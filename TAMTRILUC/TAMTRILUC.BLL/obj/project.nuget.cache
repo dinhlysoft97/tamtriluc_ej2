@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kJF7U6fQJ0FA9Y/jDqp6rBIIfZ5C9ep+kJuvizxZDqJ4oE+h70v25NiEdmDxKEnYpyhdWwHqrlQ2FzhRNMGuEg==",
+  "dgSpecHash": "Gkj9t9CVaksyO6+YBCa333XpoxcXyCFKuw9cxtgFqBUzLderala0+kCEHvioKGGHbxMBH/hxE2lV8Z+NU+Sc9g==",
   "success": true,
-  "projectFilePath": "D:\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj",
+  "projectFilePath": "D:\\tamtriluc_ej2\\TAMTRILUC\\TAMTRILUC.BLL\\TAMTRILUC.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dinh Ly Soft\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Dinh Ly Soft\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
