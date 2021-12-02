@@ -15,7 +15,7 @@ namespace TAMTRILUC.DAL
             return res;
         }
 
-        public SingleRsp DeleteUser(User user)
+        public SingleRsp DeleteUser(string userId)
         {
             var res = new SingleRsp();
             using (var context = new TAMTRILUCContext())
@@ -24,6 +24,7 @@ namespace TAMTRILUC.DAL
                 {
                     try
                     {
+                        var user = context.Users.Where(or => or.UserId == userId).FirstOrDefault();
                         var data = context.Users.Remove(user);
                         context.SaveChanges();
                         tran.Commit();
@@ -35,13 +36,6 @@ namespace TAMTRILUC.DAL
                     }
                 }
             }
-
-            var resData = new
-            {
-                Data = user,
-            };
-
-            res.Data = resData;
 
             return res;
         }

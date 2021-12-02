@@ -5,6 +5,7 @@ using TAMTRILUC.A00.Rsp;
 using TAMTRILUC.DAL;
 using TAMTRILUC.DAL.Models;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace TAMTRILUC.BLL
 {
@@ -20,31 +21,29 @@ namespace TAMTRILUC.BLL
             return res;
         }
 
-        public object SearchUser(string key, int pageSize, int pageNumber)
+        public List<User> SearchUser(string key, int pageSize, int pageNumber)
         {
-            //pageNumber = 1;
-            //pageSize = 50;
-
             var users = All.Where(x => x.UserId.Contains(key) || x.UserName.Contains(key)).OrderByDescending(x=>x.UserId);
 
-            var offset = (pageNumber - 1) * pageSize;
+            //var offset = (pageNumber - 1) * pageSize;
 
-            var totalUser = users.Count();
+            //var totalUser = users.Count();
 
-            var totalPages = (totalUser % pageSize) == 0 ? (int)(totalUser / pageSize) : (int)(totalUser / pageSize) + 1;
+            //var totalPages = (totalUser % pageSize) == 0 ? (int)(totalUser / pageSize) : (int)(totalUser / pageSize) + 1;
 
-            var data = users.Skip(offset).Take(pageSize).ToList();
+            //var data = users.Skip(offset).Take(pageSize).ToList();
 
             var res = new
             {
-                Data = data,
-                PageSize = pageSize,
-                PageNumber = pageNumber,
-                TotalRecord = totalUser,
-                TotalPages = totalPages,
+                Data = users.ToList(),
+                //Data = data,
+                //PageSize = pageSize,
+                //PageNumber = pageNumber,
+                //TotalRecord = totalUser,
+                //TotalPages = totalPages,
             };
 
-            return res;
+            return users.ToList();
         }
 
         public SingleRsp InsertUSer(UserReq userReq)
@@ -85,23 +84,9 @@ namespace TAMTRILUC.BLL
             return _rep.UpdateUser(user);
         }
 
-        public SingleRsp DeleteUser(UserReq userReq)
+        public SingleRsp DeleteUser(string userId)
         {
-            User user = new User()
-            {
-                Apk = Guid.NewGuid(),
-                UserId = userReq.UserId,
-                UserName = userReq.UserName,
-                Gender = userReq.Gender,
-                Address = userReq.Address,
-                Phone = userReq.Phone,
-                Age = userReq.Age,
-                Disabled = 0,
-                CreateDate = DateTime.Now,
-                CreateUserId = "Admin",
-            };
-
-            return _rep.DeleteUser(user);
+            return _rep.DeleteUser(userId);
         }
     }
 }

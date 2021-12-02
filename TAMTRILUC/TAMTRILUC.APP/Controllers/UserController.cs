@@ -1,14 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Syncfusion.EJ2.Base;
 
 namespace TAMTRILUC.APP.Controllers
 {
     using A00.Req;
     using A00.Rsp;
     using BLL;
+    using Newtonsoft.Json;
+    using System;
+    using System.Collections;
+    using System.Linq;
+    using TAMTRILUC.DAL.Models;
 
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UserController : ControllerBase
+    //[Route("api/[controller]")]
+    //[ApiController]
+    public class UserController : Controller
     {
         private readonly UserSvc _svc;
 
@@ -17,41 +23,77 @@ namespace TAMTRILUC.APP.Controllers
             _svc = new UserSvc();
         }
 
-        [HttpPost("get-by-id")]
-        public IActionResult GetUserById([FromBody] SimpleReq req)
+        public IActionResult SearchUser([FromBody] DataManagerRequest dm)
         {
-            var res = new SingleRsp();
-            res = _svc.Read(req.Id);
-            return Ok(res);
+            IEnumerable DataSource = _svc.SearchUser(string.Empty, 0, 0);
+            DataOperations operation = new DataOperations();
+            int count = DataSource.Cast<User>().Count();
+            if (dm.Skip != 0)
+            {
+                DataSource = operation.PerformSkip(DataSource, dm.Skip);   //Paging
+            }
+            if (dm.Take != 0)
+            {
+                DataSource = operation.PerformTake(DataSource, dm.Take);
+            }
+            return dm.RequiresCounts ? Json(new { result = DataSource, count = count }) : Json(DataSource);
         }
 
-        [HttpPost("search-user")]
-        public IActionResult SearchUser([FromBody] UserReq userReq)
+        public ActionResult InsertUser([FromBody] CRUDModel<UserReq> value)
         {
-            var res = new SingleRsp();
-            res.Data = _svc.SearchUser(userReq.Key, userReq.PageSize, userReq.PageNumber);
-            return Ok(res);
+            var res = _svc.InsertUSer(value.Value);
+            return Json(value.Value);
         }
 
-        [HttpPost("delete-user")]
-        public IActionResult DeleteUser([FromBody] UserReq req)
+        public ActionResult UpdateUser([FromBody] CRUDModel<UserReq> value)
         {
-            var res = _svc.DeleteUser(req);
-            return Ok(res);
+            var res = _svc.UpdateUser(value.Value);
+            return Json(value.Value);
         }
 
-        [HttpPost("insert-user")]
-        public IActionResult InsertUser([FromBody] UserReq userReq)
+        public ActionResult DeleteUser([FromBody] CRUDModel<UserReq> value)
         {
-            var res = _svc.InsertUSer(userReq);
-            return Ok(res);
+            var res = _svc.DeleteUser(value.Key.ToString());
+            return Json(value);
         }
 
-        [HttpPost("update-user")]
-        public IActionResult UpdateUser([FromBody] UserReq userReq)
-        {
-            var res = _svc.UpdateUser(userReq);
-            return Ok(res);
-        }
+
+        //[HttpPost("get-by-id")]
+        //public IActionResult GetUserById([FromBody] SimpleReq req)
+        //{
+        //    var res = new SingleRsp();
+        //    res = _svc.Read(req.Id);
+        //    return Ok(res);
+        //}
+
+        //[HttpPost("search-user")]
+        //public IActionResult SearchUser([FromBody] UserReq userReq)
+        //{
+        //    var res = new SingleRsp();
+        //    //res.Data = _svc.SearchUser(userReq.Key, userReq.PageSize, userReq.PageNumber);
+        //    object data = _svc.SearchUser(userReq.Key, userReq.PageSize, userReq.PageNumber);
+        //    return Ok(data);
+        //}
+
+        //[HttpPost("delete-user")]
+        //public IActionResult DeleteUser([FromBody] UserReq req)
+        //{
+        //    var res = _svc.DeleteUser(req);
+        //    return Ok(res);
+        //}
+
+        //[HttpPost("insert-user")]
+        //public IActionResult InsertUser([FromBody] UserReq userReq)
+        //{
+        //    var res = _svc.InsertUSer(userReq);
+        //    return Ok(res);
+        //}
+
+        //[HttpPost("update-user")]
+        //public IActionResult UpdateUser([FromBody] UserReq userReq)
+        //{
+        //    var res = _svc.UpdateUser(userReq);
+        //    return Ok(res);
+        //}
     }
 }

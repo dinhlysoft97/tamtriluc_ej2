@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+import { PageService, SortService, FilterService, GroupService, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -19,9 +22,11 @@ import { UserComponent } from './user/user.component';
     CounterComponent,
     FetchDataComponent,
     UserComponent
-  ],
+  ], 
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    GridModule,
+    DatePickerAllModule,
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
@@ -30,7 +35,12 @@ import { UserComponent } from './user/user.component';
       { path: 'user-data', component: UserComponent },
     ])
   ],
-  providers: [],
+  providers: [PageService,
+    SortService,
+    FilterService,
+    GroupService,
+    EditService,
+    ToolbarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
